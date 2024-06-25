@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		746948D22C2813E800E645F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746948D12C2813E800E645F3 /* AppDelegate.swift */; };
 		746948D42C2813E800E645F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746948D32C2813E800E645F3 /* SceneDelegate.swift */; };
-		746948D62C2813E800E645F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746948D52C2813E800E645F3 /* MainViewController.swift */; };
 		746948DB2C2813E900E645F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746948DA2C2813E900E645F3 /* Assets.xcassets */; };
 		746948DE2C2813E900E645F3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 746948DD2C2813E900E645F3 /* Base */; };
 		7479A6A22C28233000E5EA1E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7479A6A12C28233000E5EA1E /* FirebaseAnalytics */; };
@@ -44,17 +43,16 @@
 		7479A7032C29A92500E5EA1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7479A7022C29A92500E5EA1E /* GoogleService-Info.plist */; };
 		7479A7052C2A612100E5EA1E /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479A7042C2A612100E5EA1E /* JoinViewController.swift */; };
 		7479A7072C2A904E00E5EA1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479A7062C2A904E00E5EA1E /* LoginViewController.swift */; };
-		CB1129432C2AC91700F59FC1 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129422C2AC91700F59FC1 /* HomeTabBarController.swift */; };
-		CB1129452C2AC98000F59FC1 /* BoardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129442C2AC98000F59FC1 /* BoardTabBarController.swift */; };
-		CB1129472C2AC99B00F59FC1 /* ChatTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129462C2AC99B00F59FC1 /* ChatTabBarController.swift */; };
+		CB1129432C2AC91700F59FC1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129422C2AC91700F59FC1 /* HomeController.swift */; };
+		CB1129452C2AC98000F59FC1 /* BoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129442C2AC98000F59FC1 /* BoardController.swift */; };
+		CB1129472C2AC99B00F59FC1 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129462C2AC99B00F59FC1 /* ChatController.swift */; };
 		CB1129492C2AC9B000F59FC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129482C2AC9B000F59FC1 /* MainTabBarController.swift */; };
-		CB11294B2C2ACAFA00F59FC1 /* MypageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11294A2C2ACAFA00F59FC1 /* MypageTabBarController.swift */; };
+		CB11294B2C2ACAFA00F59FC1 /* MypageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		746948D12C2813E800E645F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		746948D32C2813E800E645F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		746948D52C2813E800E645F3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		746948DA2C2813E900E645F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		746948DD2C2813E900E645F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		746948DF2C2813E900E645F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,11 +60,11 @@
 		7479A7022C29A92500E5EA1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7479A7042C2A612100E5EA1E /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		7479A7062C2A904E00E5EA1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CB1129422C2AC91700F59FC1 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
-		CB1129442C2AC98000F59FC1 /* BoardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTabBarController.swift; sourceTree = "<group>"; };
-		CB1129462C2AC99B00F59FC1 /* ChatTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabBarController.swift; sourceTree = "<group>"; };
+		CB1129422C2AC91700F59FC1 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		CB1129442C2AC98000F59FC1 /* BoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardController.swift; sourceTree = "<group>"; };
+		CB1129462C2AC99B00F59FC1 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		CB1129482C2AC9B000F59FC1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		CB11294A2C2ACAFA00F59FC1 /* MypageTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTabBarController.swift; sourceTree = "<group>"; };
+		CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,11 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				CB1129482C2AC9B000F59FC1 /* MainTabBarController.swift */,
-				CB1129422C2AC91700F59FC1 /* HomeTabBarController.swift */,
-				CB1129442C2AC98000F59FC1 /* BoardTabBarController.swift */,
-				CB1129462C2AC99B00F59FC1 /* ChatTabBarController.swift */,
-				CB11294A2C2ACAFA00F59FC1 /* MypageTabBarController.swift */,
-				746948D52C2813E800E645F3 /* MainViewController.swift */,
+				CB1129422C2AC91700F59FC1 /* HomeController.swift */,
+				CB1129442C2AC98000F59FC1 /* BoardController.swift */,
+				CB1129462C2AC99B00F59FC1 /* ChatController.swift */,
+				CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */,
 				7479A7062C2A904E00E5EA1E /* LoginViewController.swift */,
 				7479A7042C2A612100E5EA1E /* JoinViewController.swift */,
 			);
@@ -276,13 +273,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7479A7072C2A904E00E5EA1E /* LoginViewController.swift in Sources */,
-				746948D62C2813E800E645F3 /* MainViewController.swift in Sources */,
-				CB11294B2C2ACAFA00F59FC1 /* MypageTabBarController.swift in Sources */,
+				CB11294B2C2ACAFA00F59FC1 /* MypageController.swift in Sources */,
 				7479A7052C2A612100E5EA1E /* JoinViewController.swift in Sources */,
-				CB1129432C2AC91700F59FC1 /* HomeTabBarController.swift in Sources */,
+				CB1129432C2AC91700F59FC1 /* HomeController.swift in Sources */,
 				CB1129492C2AC9B000F59FC1 /* MainTabBarController.swift in Sources */,
-				CB1129452C2AC98000F59FC1 /* BoardTabBarController.swift in Sources */,
-				CB1129472C2AC99B00F59FC1 /* ChatTabBarController.swift in Sources */,
+				CB1129452C2AC98000F59FC1 /* BoardController.swift in Sources */,
+				CB1129472C2AC99B00F59FC1 /* ChatController.swift in Sources */,
 				746948D22C2813E800E645F3 /* AppDelegate.swift in Sources */,
 				746948D42C2813E800E645F3 /* SceneDelegate.swift in Sources */,
 			);
