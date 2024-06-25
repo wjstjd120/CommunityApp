@@ -17,7 +17,6 @@ class MainTabBarController: UITabBarController {
   func configureController() {
     view.backgroundColor = .blue
     tabBar.backgroundColor = .white
-    let layout = UICollectionViewFlowLayout()
     let home = tabBarNavigationController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: HomeController())
     let board = tabBarNavigationController(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selectedImage: #imageLiteral(resourceName: "like_unselected"), rootViewController: BoardController())
     let chat = tabBarNavigationController(unselectedImage: #imageLiteral(resourceName: "speech-bubble"), selectedImage: #imageLiteral(resourceName: "speech-bubble"), rootViewController: ChatController())
