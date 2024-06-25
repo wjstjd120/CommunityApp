@@ -9,7 +9,6 @@ import UIKit
 import SnapKit
 import FirebaseAuth
 import FirebaseCore
-
 class LoginViewController: UIViewController {
     
     let mainLoginView: UIView = {

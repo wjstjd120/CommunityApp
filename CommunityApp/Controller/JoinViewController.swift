@@ -9,7 +9,6 @@ import UIKit
 import SnapKit
 import FirebaseAuth
 import FirebaseCore
-
 class JoinViewController: UIViewController {
     
     let mainJoinView: UIView = {
