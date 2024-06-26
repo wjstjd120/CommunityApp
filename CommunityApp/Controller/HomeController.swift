@@ -12,7 +12,7 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //#colorLiteral()
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) // #colorLiteral()
         let loginButton = UIButton(type: .system)
         loginButton.setTitle("로그인", for: .normal)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)

@@ -21,7 +21,7 @@ class JoinViewController: UIViewController {
         let stackView = UIStackView()
         stackView.distribution = .fillEqually
         stackView.axis = .vertical
-        stackView.spacing = 0
+        stackView.spacing = 5
         return stackView
     }()
     

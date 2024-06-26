@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
         let stackView = UIStackView()
         stackView.distribution = .fillEqually
         stackView.axis = .vertical
-        stackView.spacing = 0
+        stackView.spacing = 5
         return stackView
     }()
     
@@ -68,6 +68,15 @@ class LoginViewController: UIViewController {
         return button
     }()
     
+    let joinButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Join", for: .normal)
+        button.backgroundColor = .clear
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -82,10 +91,11 @@ class LoginViewController: UIViewController {
         mainLoginStackView.addArrangedSubview(idField)
         mainLoginStackView.addArrangedSubview(pwdField)
         mainLoginStackView.addArrangedSubview(loginButton)
+        mainLoginStackView.addArrangedSubview(joinButton)
         
         mainLoginView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).inset(UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0))
-            $0.size.equalTo(CGSize(width: 300, height: 210))
+            $0.size.equalTo(CGSize(width: 300, height: 250))
             $0.centerX.equalTo(view.safeAreaLayoutGuide)
         }
         
@@ -94,6 +104,7 @@ class LoginViewController: UIViewController {
         }
         
         loginButton.addTarget(self, action: #selector(loginButtonTap(_:)), for: .touchDown)
+        joinButton.addTarget(self, action: #selector(joinButtonTap), for: .touchDown)
     }
     
     @objc
@@ -102,6 +113,12 @@ class LoginViewController: UIViewController {
             print("ID: \(id) PWD: \(pwd)")
             createUser(id, pwd)
         }
+    }
+    
+    @objc
+    func joinButtonTap() {
+        let joinViewController = JoinViewController()
+        self.navigationController?.pushViewController(joinViewController, animated: true)
     }
     
     func createUser(_ id: String, _ pwd: String) {
