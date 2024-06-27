@@ -63,6 +63,12 @@ class LoginViewController: UIViewController {
         return textField
     }()
     
+    private let forgotPasswordButton: UIButton = {
+        let bt = UIButton(type: .system)
+        bt.setTitle("비밀번호를 잊으셨나요? 비밀번호찾기", for: .normal)
+        return bt
+    }()
+    
     
     let loginButton: UIButton = {
         let button = UIButton()
@@ -72,12 +78,9 @@ class LoginViewController: UIViewController {
         return button
     }()
     
-    let joinButton: UIButton = {
+    private let joinButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Join", for: .normal)
-        button.backgroundColor = .clear
-        button.setTitleColor(.systemBlue, for: .normal)
-        button.layer.cornerRadius = 10
+        button.setTitle("아이디가 없으신가요? 회원가입하기", for: .normal)
         return button
     }()
     
@@ -95,7 +98,6 @@ class LoginViewController: UIViewController {
         mainLoginStackView.addArrangedSubview(idField)
         mainLoginStackView.addArrangedSubview(pwdField)
         mainLoginStackView.addArrangedSubview(loginButton)
-        mainLoginStackView.addArrangedSubview(joinButton)
         
         mainLoginView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).inset(UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0))
@@ -105,12 +107,26 @@ class LoginViewController: UIViewController {
         
         mainLoginStackView.snp.makeConstraints {
             $0.edges.equalToSuperview().inset(0)
+            
         }
         
         loginButton.addTarget(self, action: #selector(loginButtonTap(_:)), for: .touchDown)
         joinButton.addTarget(self, action: #selector(joinButtonTap), for: .touchDown)
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordbuttonTap), for: .touchUpInside)
+        
+        [forgotPasswordButton, joinButton]
+            .forEach { view.addSubview($0) }
+        
+        forgotPasswordButton.snp.makeConstraints {
+            $0.width.equalTo(200)
+            $0.center.equalToSuperview()
+        }
+        
+        joinButton.snp.makeConstraints {
+            $0.center.equalToSuperview()
+            $0.width.equalTo(200)
+        }
     }
-    
     @objc
     func loginButtonTap(_ sender: UIButton) {
         if let id = idField.text, let pwd = pwdField.text {
@@ -125,6 +141,10 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(joinViewController, animated: true)
     }
     
+    @objc func forgotPasswordbuttonTap() {
+        print("비밀번호 까먹었다는 버튼 누름")
+    }
+    
     func createUser(_ id: String, _ pwd: String) {
         Auth.auth().signIn(withEmail: id, password: pwd) { result, error in
             if let error = error {
@@ -137,3 +157,5 @@ class LoginViewController: UIViewController {
         }
     }
 }
+
+
