@@ -39,6 +39,7 @@ class JoinViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = .black
         textField.backgroundColor = .white
+        textField.autocapitalizationType = .none
         textField.borderStyle = .roundedRect
         // Placeholder 색상 바꾸는법
         textField.attributedPlaceholder = NSAttributedString(
@@ -52,6 +53,7 @@ class JoinViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = .black
         textField.backgroundColor = .white
+        textField.autocapitalizationType = .none
         textField.borderStyle = .roundedRect
         textField.attributedPlaceholder = NSAttributedString(
             string: "비밀번호를 입력해주세요",

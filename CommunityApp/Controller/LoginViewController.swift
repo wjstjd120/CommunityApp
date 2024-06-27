@@ -40,6 +40,7 @@ class LoginViewController: UIViewController {
         textField.textColor = .black
         textField.backgroundColor = .white
         textField.borderStyle = .roundedRect
+        textField.autocapitalizationType = .none
         // Placeholder 색상 바꾸는법
         textField.attributedPlaceholder = NSAttributedString(
             string: "아이디를 입력해주세요",
@@ -53,12 +54,15 @@ class LoginViewController: UIViewController {
         textField.textColor = .black
         textField.backgroundColor = .white
         textField.borderStyle = .roundedRect
+        textField.autocapitalizationType = .none
+        textField.isSecureTextEntry = true
         textField.attributedPlaceholder = NSAttributedString(
             string: "비밀번호를 입력해주세요",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
         )
         return textField
     }()
+    
     
     let loginButton: UIButton = {
         let button = UIButton()
