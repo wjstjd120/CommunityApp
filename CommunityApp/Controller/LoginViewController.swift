@@ -69,7 +69,6 @@ class LoginViewController: UIViewController {
         return bt
     }()
     
-    
     let loginButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
@@ -79,7 +78,7 @@ class LoginViewController: UIViewController {
     }()
     
     private let joinButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("아이디가 없으신가요? 회원가입하기", for: .normal)
         return button
     }()
@@ -112,19 +111,21 @@ class LoginViewController: UIViewController {
         
         loginButton.addTarget(self, action: #selector(loginButtonTap(_:)), for: .touchDown)
         joinButton.addTarget(self, action: #selector(joinButtonTap), for: .touchDown)
-        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordbuttonTap), for: .touchUpInside)
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonTap), for: .touchDown)
         
         [forgotPasswordButton, joinButton]
             .forEach { view.addSubview($0) }
         
         forgotPasswordButton.snp.makeConstraints {
             $0.width.equalTo(200)
-            $0.center.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(-10)
+            $0.centerX.equalToSuperview()
         }
         
         joinButton.snp.makeConstraints {
-            $0.center.equalToSuperview()
+            $0.centerX.equalToSuperview()
             $0.width.equalTo(200)
+            $0.bottom.equalTo(forgotPasswordButton.snp.top).offset(-10)
         }
     }
     @objc
@@ -141,7 +142,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(joinViewController, animated: true)
     }
     
-    @objc func forgotPasswordbuttonTap() {
+    @objc func forgotPasswordButtonTap() {
         print("비밀번호 까먹었다는 버튼 누름")
     }
     
@@ -157,5 +158,3 @@ class LoginViewController: UIViewController {
         }
     }
 }
-
-
