@@ -118,7 +118,6 @@
 		746948D02C2813E800E645F3 /* CommunityApp */ = {
 			isa = PBXGroup;
 			children = (
-				CB61FDE52C2DADD20048FC52 /* Template */,
 				CB1129412C2AC62F00F59FC1 /* Controller */,
 				7479A7022C29A92500E5EA1E /* GoogleService-Info.plist */,
 				746948D12C2813E800E645F3 /* AppDelegate.swift */,
@@ -142,13 +141,6 @@
 				7479A7042C2A612100E5EA1E /* JoinViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		CB61FDE52C2DADD20048FC52 /* Template */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Template;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
