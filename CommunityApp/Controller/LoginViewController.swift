@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
     
     private let forgotPasswordButton: UIButton = {
         let bt = UIButton(type: .system)
-        bt.setTitle("비밀번호를 잊으셨나요? 비밀번호찾기", for: .normal)
+        bt.setTitle("비밀번호찾기", for: .normal)
         return bt
     }()
     
@@ -79,7 +79,7 @@ class LoginViewController: UIViewController {
     
     private let joinButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("아이디가 없으신가요? 회원가입하기", for: .normal)
+        button.setTitle("회원가입하기", for: .normal)
         return button
     }()
     
