@@ -53,6 +53,7 @@ class JoinViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = .black
         textField.backgroundColor = .white
+        textField.isSecureTextEntry = true
         textField.autocapitalizationType = .none
         textField.borderStyle = .roundedRect
         textField.attributedPlaceholder = NSAttributedString(
