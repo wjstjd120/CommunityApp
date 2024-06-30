@@ -15,6 +15,7 @@ class OthersPage: UIViewController {
         view.backgroundColor = .white
         
         // 채팅 버튼
+        
         let chatButton = UIButton(type: .system)
         chatButton.setTitle("채팅", for: .normal)
         chatButton.setTitleColor(.black, for: .normal)

@@ -16,6 +16,7 @@ class MypageController: UIViewController {
         view.backgroundColor = .white
         
         // 편집 버튼
+        
         let editButton = UIButton(type: .system)
         editButton.setTitle("편집", for: .normal)
         editButton.setTitleColor(.black, for: .normal)
