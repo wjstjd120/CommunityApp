@@ -1,26 +1,25 @@
 //
-//  MypageController.swift
+//  OthersPage.swift
 //  CommunityApp
 //
-//  Created by t2023-m0019 on 6/25/24.
+//  Created by t2023-m0019 on 6/30/24.
 //
+
 import UIKit
 import SnapKit
 
-class MypageController: UIViewController {
-    
-    let achievementLabels = UILabel()
+class OthersPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        // 편집 버튼
-        let editButton = UIButton(type: .system)
-        editButton.setTitle("편집", for: .normal)
-        editButton.setTitleColor(.black, for: .normal)
-        editButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .medium)
-        view.addSubview(editButton)
+        // 채팅 버튼
+        let chatButton = UIButton(type: .system)
+        chatButton.setTitle("채팅", for: .normal)
+        chatButton.setTitleColor(.black, for: .normal)
+        chatButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+        view.addSubview(chatButton)
         
         // 프로필 사진
         
@@ -62,6 +61,7 @@ class MypageController: UIViewController {
         
         let hsv1 = UIStackView()
         hsv1.axis = .horizontal
+//        hsv1.distribution = .fillEqually
         hsv1.spacing = 30
         view.addSubview(hsv1)
         
@@ -75,7 +75,7 @@ class MypageController: UIViewController {
         hsv1.addArrangedSubview(mainBadgeButton)
         
         let myFollowingButton = UIButton(type: .system)
-        myFollowingButton.setTitle("내 즐겨찾기", for: .normal)
+        myFollowingButton.setTitle("구독하기", for: .normal)
         myFollowingButton.backgroundColor = .systemBlue
         myFollowingButton.setTitleColor(.white, for: .normal)
         myFollowingButton.layer.cornerRadius = 20
@@ -101,9 +101,9 @@ class MypageController: UIViewController {
         
         let numberValues = [
             4,
-            57,
-            179,
-            17
+            49,
+            98,
+            31
         ]
         
         for (index, title) in buttonTitles.enumerated() {
@@ -165,39 +165,22 @@ class MypageController: UIViewController {
             vsv1.addArrangedSubview(backgroundView)
         }
         
-        // 네 번째 horizontal stack view
-        
-        let hsv4 = UIStackView()
-        hsv4.axis = .horizontal
-        hsv4.distribution = .fillEqually
-        view.addSubview(hsv4)
-        
-        let termsButton = UIButton(type: .system)
-        termsButton.setTitle("약관/정책", for: .normal)
-        termsButton.titleLabel?.textAlignment = .center
-        hsv4.addArrangedSubview(termsButton)
-        
-        let supportButton = UIButton(type: .system)
-        supportButton.setTitle("고객센터", for: .normal)
-        supportButton.titleLabel?.textAlignment = .center
-        hsv4.addArrangedSubview(supportButton)
-        
-        // 로그아웃 버튼
+        // 신고하기 버튼
         
         let logoutButton = UIButton(type: .system)
-        logoutButton.setTitle("로그아웃", for: .normal)
+        logoutButton.setTitle("신고하기", for: .normal)
         logoutButton.setTitleColor(.red, for: .normal)
         view.addSubview(logoutButton)
         
         // SnapKit으로 레이아웃 설정
         
-        editButton.snp.makeConstraints { make in
+        chatButton.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(10)
             make.trailing.equalToSuperview().offset(-20)
         }
         
         profileImageView.snp.makeConstraints { make in
-            make.top.equalTo(editButton).offset(20)
+            make.top.equalTo(chatButton).offset(20)
             make.centerX.equalToSuperview()
             make.width.height.equalTo(100)
         }
@@ -252,12 +235,6 @@ class MypageController: UIViewController {
             make.top.equalTo(hsv3.snp.bottom).offset(30)
             make.leading.trailing.equalToSuperview().inset(60)
         }
-        
-        hsv4.snp.makeConstraints { make in
-            make.bottom.equalTo(logoutButton.snp.top).offset(-4)
-            make.leading.trailing.equalToSuperview().inset(100)
-            make.height.equalTo(20)
-        }
 
         logoutButton.snp.makeConstraints { make in
             make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-20)
@@ -266,10 +243,3 @@ class MypageController: UIViewController {
         
     }
 }
-
-
-
-
-
-
-

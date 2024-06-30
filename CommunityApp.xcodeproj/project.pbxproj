@@ -48,6 +48,7 @@
 		CB1129472C2AC99B00F59FC1 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129462C2AC99B00F59FC1 /* ChatController.swift */; };
 		CB1129492C2AC9B000F59FC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129482C2AC9B000F59FC1 /* MainTabBarController.swift */; };
 		CB11294B2C2ACAFA00F59FC1 /* MypageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */; };
+		CB61FEB92C31946B0048FC52 /* OthersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FEB82C31946B0048FC52 /* OthersPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		CB1129462C2AC99B00F59FC1 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		CB1129482C2AC9B000F59FC1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageController.swift; sourceTree = "<group>"; };
+		CB61FEB82C31946B0048FC52 /* OthersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */,
 				7479A7062C2A904E00E5EA1E /* LoginViewController.swift */,
 				7479A7042C2A612100E5EA1E /* JoinViewController.swift */,
+				CB61FEB82C31946B0048FC52 /* OthersPage.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				7479A7052C2A612100E5EA1E /* JoinViewController.swift in Sources */,
 				CB1129432C2AC91700F59FC1 /* HomeController.swift in Sources */,
 				CB1129492C2AC9B000F59FC1 /* MainTabBarController.swift in Sources */,
+				CB61FEB92C31946B0048FC52 /* OthersPage.swift in Sources */,
 				CB1129452C2AC98000F59FC1 /* BoardController.swift in Sources */,
 				CB1129472C2AC99B00F59FC1 /* ChatController.swift in Sources */,
 				746948D22C2813E800E645F3 /* AppDelegate.swift in Sources */,
