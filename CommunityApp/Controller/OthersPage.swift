@@ -62,7 +62,7 @@ class OthersPage: UIViewController {
         
         let hsv1 = UIStackView()
         hsv1.axis = .horizontal
-//        hsv1.distribution = .fillEqually
+        hsv1.distribution = .fillEqually
         hsv1.spacing = 30
         view.addSubview(hsv1)
         
@@ -72,14 +72,14 @@ class OthersPage: UIViewController {
         mainBadgeButton.setTitle("백준 골드", for: .normal)
         mainBadgeButton.backgroundColor = .systemBlue
         mainBadgeButton.setTitleColor(.white, for: .normal)
-        mainBadgeButton.layer.cornerRadius = 20
+        mainBadgeButton.layer.cornerRadius = 10
         hsv1.addArrangedSubview(mainBadgeButton)
         
         let myFollowingButton = UIButton(type: .system)
         myFollowingButton.setTitle("구독하기", for: .normal)
         myFollowingButton.backgroundColor = .systemBlue
         myFollowingButton.setTitleColor(.white, for: .normal)
-        myFollowingButton.layer.cornerRadius = 20
+        myFollowingButton.layer.cornerRadius = 10
         hsv1.addArrangedSubview(myFollowingButton)
         
         // 두 번째 horizontal stack view
@@ -150,12 +150,14 @@ class OthersPage: UIViewController {
         for achievement in achievementLabels {
             let achievementLabel = UILabel()
             achievementLabel.text = achievement
-            achievementLabel.textColor = .white
+            achievementLabel.textColor = .black
             achievementLabel.textAlignment = .center
             
             let backgroundView = UIView()
-            backgroundView.backgroundColor = .black
+            backgroundView.backgroundColor = .white
             backgroundView.layer.cornerRadius = 15
+            backgroundView.layer.borderWidth = 1
+            backgroundView.layer.borderColor = UIColor.black.cgColor
             backgroundView.addSubview(achievementLabel)
             
             achievementLabel.snp.makeConstraints { make in
@@ -215,7 +217,7 @@ class OthersPage: UIViewController {
         }
         
         hsv1.snp.makeConstraints { make in
-            make.top.equalTo(experienceLabel.snp.bottom).offset(30)
+            make.top.equalTo(experienceLabel.snp.bottom).offset(50)
             make.centerX.equalToSuperview()
             make.height.equalTo(40)
         }

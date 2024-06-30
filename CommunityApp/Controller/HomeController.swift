@@ -19,10 +19,10 @@ class HomeController: UIViewController {
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginButton)
         
-        NSLayoutConstraint.activate([
-            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+        loginButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(10)
+            make.trailing.equalToSuperview().offset(-20)
+        }
     }
     
     @objc func loginButtonTapped() {

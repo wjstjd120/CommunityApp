@@ -20,7 +20,7 @@ class MainTabBarController: UITabBarController {
     let home = tabBarNavigationController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: HomeController())
     let board = tabBarNavigationController(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selectedImage: #imageLiteral(resourceName: "like_unselected"), rootViewController: BoardController())
     let chat = tabBarNavigationController(unselectedImage: #imageLiteral(resourceName: "speech-bubble"), selectedImage: #imageLiteral(resourceName: "speech-bubble"), rootViewController: ChatController())
-    let mypage = tabBarNavigationController(unselectedImage: #imageLiteral(resourceName: "profile_unselected"), selectedImage: #imageLiteral(resourceName: "profile_selected"), rootViewController: MypageController())
+    let mypage = tabBarNavigationController(unselectedImage: #imageLiteral(resourceName: "profile_unselected"), selectedImage: #imageLiteral(resourceName: "profile_selected"), rootViewController: MyPageController())
       viewControllers = [home, board,chat, mypage]
   }
   func tabBarNavigationController(unselectedImage: UIImage, selectedImage: UIImage, rootViewController: UIViewController) -> UINavigationController {

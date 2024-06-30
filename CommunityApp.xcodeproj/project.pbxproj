@@ -47,9 +47,11 @@
 		CB1129452C2AC98000F59FC1 /* BoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129442C2AC98000F59FC1 /* BoardController.swift */; };
 		CB1129472C2AC99B00F59FC1 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129462C2AC99B00F59FC1 /* ChatController.swift */; };
 		CB1129492C2AC9B000F59FC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1129482C2AC9B000F59FC1 /* MainTabBarController.swift */; };
-		CB11294B2C2ACAFA00F59FC1 /* MypageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */; };
+		CB11294B2C2ACAFA00F59FC1 /* MyPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11294A2C2ACAFA00F59FC1 /* MyPageController.swift */; };
 		CB61FEB92C31946B0048FC52 /* OthersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FEB82C31946B0048FC52 /* OthersPage.swift */; };
 		CB61FEBB2C319DD40048FC52 /* EditMyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FEBA2C319DD40048FC52 /* EditMyPage.swift */; };
+		CB61FEBD2C31BB050048FC52 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FEBC2C31BB050048FC52 /* CustomTextField.swift */; };
+		CB61FEBF2C31BB4F0048FC52 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FEBE2C31BB4F0048FC52 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,9 +68,11 @@
 		CB1129442C2AC98000F59FC1 /* BoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardController.swift; sourceTree = "<group>"; };
 		CB1129462C2AC99B00F59FC1 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		CB1129482C2AC9B000F59FC1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageController.swift; sourceTree = "<group>"; };
+		CB11294A2C2ACAFA00F59FC1 /* MyPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageController.swift; sourceTree = "<group>"; };
 		CB61FEB82C31946B0048FC52 /* OthersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersPage.swift; sourceTree = "<group>"; };
 		CB61FEBA2C319DD40048FC52 /* EditMyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMyPage.swift; sourceTree = "<group>"; };
+		CB61FEBC2C31BB050048FC52 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CB61FEBE2C31BB4F0048FC52 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +144,13 @@
 				CB1129422C2AC91700F59FC1 /* HomeController.swift */,
 				CB1129442C2AC98000F59FC1 /* BoardController.swift */,
 				CB1129462C2AC99B00F59FC1 /* ChatController.swift */,
-				CB11294A2C2ACAFA00F59FC1 /* MypageController.swift */,
+				CB11294A2C2ACAFA00F59FC1 /* MyPageController.swift */,
 				7479A7062C2A904E00E5EA1E /* LoginViewController.swift */,
 				7479A7042C2A612100E5EA1E /* JoinViewController.swift */,
 				CB61FEB82C31946B0048FC52 /* OthersPage.swift */,
 				CB61FEBA2C319DD40048FC52 /* EditMyPage.swift */,
+				CB61FEBC2C31BB050048FC52 /* CustomTextField.swift */,
+				CB61FEBE2C31BB4F0048FC52 /* Extension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,13 +285,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7479A7072C2A904E00E5EA1E /* LoginViewController.swift in Sources */,
-				CB11294B2C2ACAFA00F59FC1 /* MypageController.swift in Sources */,
+				CB11294B2C2ACAFA00F59FC1 /* MyPageController.swift in Sources */,
 				7479A7052C2A612100E5EA1E /* JoinViewController.swift in Sources */,
 				CB1129432C2AC91700F59FC1 /* HomeController.swift in Sources */,
 				CB1129492C2AC9B000F59FC1 /* MainTabBarController.swift in Sources */,
 				CB61FEB92C31946B0048FC52 /* OthersPage.swift in Sources */,
 				CB1129452C2AC98000F59FC1 /* BoardController.swift in Sources */,
 				CB61FEBB2C319DD40048FC52 /* EditMyPage.swift in Sources */,
+				CB61FEBD2C31BB050048FC52 /* CustomTextField.swift in Sources */,
+				CB61FEBF2C31BB4F0048FC52 /* Extension.swift in Sources */,
 				CB1129472C2AC99B00F59FC1 /* ChatController.swift in Sources */,
 				746948D22C2813E800E645F3 /* AppDelegate.swift in Sources */,
 				746948D42C2813E800E645F3 /* SceneDelegate.swift in Sources */,
