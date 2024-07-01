@@ -58,12 +58,14 @@ class EditMyPage: UIViewController {
     }
     
     private func configureBackButton() {
-        let backButton = UIBarButtonItem(title: "뒤로가기", style: .plain, target: self, action: #selector(handleBackButton))
+        let backButton = UIBarButtonItem(title: "취소", style: .plain, target: self, action: #selector(handleBackButton))
+        let doneButton = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(handleBackButton))
+        
         navigationItem.leftBarButtonItem = backButton
+        navigationItem.rightBarButtonItem = doneButton
     }
     
     private func configureUI() {
-
         
         view.addSubview(addProfilePhotoButton)
         addProfilePhotoButton.centerX(inview: view)
@@ -75,17 +77,6 @@ class EditMyPage: UIViewController {
         stack.spacing = 20
         view.addSubview(stack)
         stack.anchor(top: addProfilePhotoButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 30, paddingLeft: 30, paddingRight: 30)
-        
-        let doneButton = UIButton(type: .system)
-        doneButton.setTitle("완료", for: .normal)
-        doneButton.setTitleColor(.black, for: .normal)
-        doneButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .medium)
-        doneButton.addTarget(self, action: #selector(handleEditMyPage), for: .touchDown)
-        view.addSubview(doneButton)
-        doneButton.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(10)
-            make.trailing.equalToSuperview().offset(-20)
-        }
     }
     @objc private func handleEditMyPage() {
         guard let userNameChange = userNameChangeTextField.text, !userNameChange.isEmpty else { return }

@@ -26,6 +26,10 @@ class MyPageController: UIViewController {
     let supportButton = UIButton(type: .system)
     let logoutButton = UIButton(type: .system)
     
+    override func viewWillAppear(_ animated: Bool) {
+        configureEditButton()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -35,16 +39,8 @@ class MyPageController: UIViewController {
     }
     
     private func configureEditButton() {
-        let editButton = UIButton(type: .system)
-        editButton.setTitle("편집", for: .normal)
-        editButton.setTitleColor(.black, for: .normal)
-        editButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .medium)
-        editButton.addTarget(self, action: #selector(handleEditButton), for: .touchDown)
-        view.addSubview(editButton)
-        editButton.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(10)
-            make.trailing.equalToSuperview().offset(-20)
-        }
+        let loginButton = UIBarButtonItem(title: "편집", style: .plain, target: self, action: #selector(handleEditButton))
+        navigationItem.rightBarButtonItem = loginButton
     }
     
     private func configureUI() {
@@ -243,7 +239,8 @@ class MyPageController: UIViewController {
         let editMyPageVC = EditMyPage()
         let navigationController = UINavigationController(rootViewController: editMyPageVC)
         navigationController.modalPresentationStyle = .fullScreen
+        
         present(navigationController, animated: true, completion: nil)
     }
-
+    
 }

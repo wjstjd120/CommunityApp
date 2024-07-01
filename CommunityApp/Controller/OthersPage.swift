@@ -12,6 +12,10 @@ class OthersPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+    }
+    
+    func configureUI() {
         view.backgroundColor = .white
         
         // 채팅 버튼
@@ -90,7 +94,6 @@ class OthersPage: UIViewController {
         hsv2.spacing = 10
         view.addSubview(hsv2)
         
-        
         // UIButton
         
         let buttonTitles = [
@@ -107,7 +110,7 @@ class OthersPage: UIViewController {
             31
         ]
         
-        for (index, title) in buttonTitles.enumerated() {
+        for (_, title) in buttonTitles.enumerated() {
             
             let indexButton = UIButton(type: .system)
             indexButton.setTitle(title, for: .normal)
@@ -124,7 +127,7 @@ class OthersPage: UIViewController {
         hsv3.spacing = 10
         view.addSubview(hsv3)
         
-        for (index, title) in buttonTitles.enumerated() {
+        for (index, _) in buttonTitles.enumerated() {
             let numberLabels = UILabel()
             numberLabels.text = "\(numberValues[index])"
             numberLabels.textColor = .black
@@ -144,7 +147,7 @@ class OthersPage: UIViewController {
             "* 레벨 10 달성",
             "* 레벨 30 달성",
             "* 백준 실버 달성",
-            "* 백준 골드 달성",
+            "* 백준 골드 달성"
         ]
         
         for achievement in achievementLabels {
@@ -164,7 +167,6 @@ class OthersPage: UIViewController {
                 make.edges.equalToSuperview().inset(UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10))
             }
             
-
             vsv1.addArrangedSubview(backgroundView)
         }
         
@@ -243,6 +245,5 @@ class OthersPage: UIViewController {
             make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-20)
             make.centerX.equalToSuperview()
         }
-        
     }
 }
